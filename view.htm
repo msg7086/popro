@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Popro Toshokan</title>
+<link href="default.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header-title"><a href="index.htm#1">Popro Toshokan 破肉図書館</a></div>
+
+<div id="gobbs" style="position:absolute;right:20px;top:10px;"><a href="./bbs/" target="_blank"><img src="gobbs.png" alt="Visit Forum" /></a></div>
+
+<div id="torrent-details">
+</div>
+
+</div><!-- container end -->
+
+<div id="footer-copyright">&copy; 2010 破肉図書館株式会社</div>
+<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="js/base64.js"></script>
+<script type="text/javascript" src="js/utf8to16.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$.get('ajaxd.php?hash=' + location.hash.slice(1), function (data) {
+		$("#torrent-details").html(utf8to16(decode64(data)));
+	});
+});
+</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12501301-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

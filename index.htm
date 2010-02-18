@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Popro Toshokan</title>
+<link href="default.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header-title"><a href="#1" onclick="return PreSearch('')">Popro Toshokan 破肉図書館</a><br />
+<span style="font-size: 12px; text-alignment: center;">肉之书于肉之枢，得之手于得之首</span></div>
+<div id="quickpanel">
+	<div>
+		<a id="UserAction" href="#UserAction">
+			<img src="user.png" alt="UserAction" /><br />
+			<span id="Username"></span>
+		</a>
+	</div>
+	<div>
+		<a id="feedurl" href="feed.php" target="_blank">
+			<img src="rss.png" alt="RSS Feed" /><br />
+			RSS 订阅
+		</a>
+	</div>
+	<div>
+		<a href="http://bbs.popro.info/" target="_blank">
+			<img src="gobbs.png" alt="Visit Forum" /><br />
+			破肉交流论坛
+		</a>
+	</div>
+</div>
+
+<form id="search-form" onsubmit="Search();return false;" action="">
+	<div>
+		<input name="search" id="search-input" type="text" size="25" maxlength="50" value="" />
+		<input type="button" id="search-submit" value="Search" />
+	</div>
+</form>
+
+<div id="episode-index">
+<img src="loading.gif" alt="Loading..." />Loading...
+</div>
+<div style="clear:both"></div>
+
+<ul class="main-pagination">
+	<li>Pages: </li>
+</ul>
+
+<div class="mi_progress"><img src="loading.gif" alt="Loading..." />Loading...</div>
+<table id="main-index">
+<tbody><tr><td></td></tr></tbody>
+</table>
+
+<ul class="main-pagination">
+	<li>Pages: </li>
+</ul>
+
+<div class="clear"></div>
+
+</div><!-- container end -->
+<div id="donation" style="text-align:center;">
+
+若您支持破肉図書館的发展，请在此
+<img alt="" border="0" src="btn_donate_SM.gif" width="74" height="21"/>，我们将十分感谢。
+
+</div>
+<div id="footer-copyright">&copy; 2010 破肉図書館株式会社<br />
+为Opera和Firefox之显示而优化
+</div>
+<div id="validpanel" style="position:absolute;right:20px;">
+<a href="http://validator.w3.org/check?uri=referer">
+<img src="valid-xhtml10-blue.png" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+</a>
+<a href="http://validator.w3.org/feed/check.cgi?url=http%3A//popro.info/feed.php">
+<img src="valid-atom.png" alt="Valid Atom 1.0" height="31" width="88" />
+</a>
+</div>
+
+
+<div id="UserPanel">
+<div id="UserMemberPanel">
+<a href="#">Add to favorite</a>
+</div>
+<div id="UserGuestPanel">
+<form id="Login" method="post">
+<table id="submit-table">
+	<tbody>
+	<tr><td class="submit-label">E-Mail</td><td><input type="text" name="eMail" value="" /></td></tr>
+	<tr><td class="submit-label">Password</td><td><input type="password" name="Password" value="" /></td></tr>
+	<tr><td colspan="2" class="submit-submit">
+		<input type="hidden" name="Action" value="Login" />
+		<div id="FailMessage" class="box-error" style="display:none;">登录失败，账号或密码错误。</div>
+		<div id="MailValidate" class="box-error" style="display:none;">邮箱地址未验证。请在邮箱中找到验证邮件，点击验证链接。</div>
+		<div id="RegSucc" class="box-error" style="display:none;">注册成功，验证邮件已发至您的邮箱。</div>
+		<button type="submit">Login</button>
+		<div id="LoginLoading" style="display:none;"><img src="loading.gif" alt="Loading..." />Please wait...</div>
+	</td></tr>
+	</tbody>
+</table>
+</form>
+</div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="js/base64.js"></script>
+<script type="text/javascript" src="js/utf8to16.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/json2.js"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12501301-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

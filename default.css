@@ -1,0 +1,388 @@
+@charset "utf-8";
+
+abbr {
+	cursor: help;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	background: #EDF2FC;
+	padding: 0px;
+	margin: 0px;
+}
+
+a:hover {
+	color: #1010C0;
+	text-decoration: underline;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+table {
+	margin: 0px;
+	padding: 0px;
+}
+
+#container {
+	position: relative;
+	margin: 10px;
+	padding: 8px;
+	border: 4px solid #CCCCCC;
+	background: #FFFFFF;
+}
+
+#header-title {
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 8px;
+	text-align: center;
+}
+
+#header-version {
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-bottom: 8px;
+	text-align: center;
+}
+
+#header-version img {
+	margin-bottom: -3px;
+}
+
+#header-left {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	font-size: 11px;
+	color: #555555;
+}
+
+#header-time {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	font-size: 0.8em;
+	color: #555555;
+}
+
+#header-links {
+	font-size: 0.8em;
+	font-weight: normal;
+	margin-bottom: 8px;
+	text-align: center;
+}
+
+#search-form {
+	display: block;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#categories-list, #filters-list {
+	text-align: center;
+	list-style: none;
+	margin: 0px;
+	margin-bottom: 8px;
+	padding: 0px;
+}
+
+#categories-list li, #filters-list li {
+	display: inline;
+	margin: 0px;
+	margin-right: 5px;
+}
+
+#main-index {
+	width: 100%;
+	border-spacing: 0px;
+	border: 1px solid #CCDDDD;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#main-index tr:hover td {
+	background: #DDDDDD;
+}
+
+.main-index-row-dark {
+	background: #EEEEEE;
+}
+
+.main-index-row-light {
+	background: #FFFFFF;
+}
+
+.main-index-row-batch-dark {
+	background: #FFFFCC;
+}
+
+.main-index-row-batch-light {
+	background: #FFFFE0;
+}
+
+.main-index-link-cell {
+	/*width: 150px;*/
+	white-space: nowrap;
+	vertical-align: bottom;
+	font-size: 0.9em;
+}
+
+.main-index-name {
+	padding-bottom: 2px;
+}
+
+/*.main-index-name a:link, .main-index-name a:visited {
+	color: #991111;
+}*/
+
+.main-index-name a.trusted {
+	color: #116611;
+}
+
+.main-index-name a.fail, .kw-light {
+	color: #996666 !important;
+}
+
+.kw-team {
+	color: #22AA00 !important;
+}
+
+.main-index-other {
+	font-size: 0.9em;
+	color: #555555;
+}
+
+.main-index-details {
+	margin-bottom: 2px;
+}
+
+.main-index-category-cell {
+	width: 64px;
+}
+
+.main-index-category-cell a {
+	margin-top: 0px;
+	padding: 0px;
+}
+
+.main-pagination {
+	text-align: center;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.main-pagination li {
+	display: inline;
+	margin-right: 5px;
+}
+
+.icon {
+	margin-bottom: -2px;
+}
+
+#submit-table {
+	margin: auto;
+	width: 80%;
+}
+
+.submit-label {
+	width: 20px;
+	text-align: right;
+}
+
+.submit-description {
+	font-size: 0.9em;
+	color: #555555;
+	text-align: right;
+}
+
+.submit-submit {
+	text-align: center;
+}
+
+#submit-table input[type=text],
+#submit-table input[type=password] {
+	width: 99%;
+}
+
+#torrent-details {
+	width: 850px;
+	margin: auto;
+	border: 1px solid #DDDDDD;
+}
+
+.torrent-details-label {
+	font-weight: bold;
+}
+
+#torrent-details table {
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+#torrent-details table td {
+	padding-right: 5px;
+}
+
+#torrent-details div {
+	padding: 1px;
+}
+
+#torrent-details div:hover {
+	background: #DDDDDD;
+}
+
+#torrent-details a.report-link {
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+
+#torrent-details a.report-link:hover {
+	background: #FFAAAA;
+}
+
+#torrent-details a.details-link {
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+
+.torrent-details-row-dark {
+	background: #EEEEEE;
+}
+
+.torrent-details-row-light {
+	background: #FFFFFF;
+}
+
+#footer-copyright {
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+#footer-stats {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+.box-error {
+	padding: 4px;
+	border: 1px solid #FF0000;
+	background: #FFEEEE;
+}
+
+.box-success {
+	padding: 4px;
+	border: 1px solid #00FF00;
+	background: #EEFFEE;
+}
+
+.box-notification {
+	padding: 4px;
+	border: 1px solid #999900;
+	background: #FFFFEE;
+}
+
+.showme {
+	display: none;
+}
+
+.red-line {
+	border-top: 2px solid red;
+}
+
+.team {
+	padding: 1px 3px;
+	margin-right: 2px;
+	border: 1px solid #999900;
+	background: #FFFFEE;
+}
+
+.torrent-stats td,
+.torrent-stats th {
+	border: 1px solid #AAA;
+}
+
+.tar {
+	text-align: right;
+}
+.tac {
+	text-align: center;
+}
+
+#episode-index div {
+	display:block;
+	float:left;
+	margin: 2px 0 2px 10px;
+	height: 24px;
+	white-space: nowrap;
+	word-break:keep-all;
+}
+
+#episode-index div a {
+	line-height: 24px;
+	padding: 2px;
+	white-space: nowrap;
+	word-break:keep-all;
+	min-height: 15px;
+}
+
+#episode-index div a.ei {
+	border: 1px solid #999900;
+	background-color: #FFFFEE;
+	color: #CC3300;
+}
+
+#episode-index div a.team {
+	border: 1px solid pink;
+	background-color: #FFF5F5;
+}
+
+.main-index-link-cell div {
+	padding: 0 5px;
+}
+
+cite {
+	color: gray;
+	font-size: 10px;
+}
+
+.gl a {
+	color: #5d98c6!important;
+}
+
+#quickpanel {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+
+#quickpanel div {
+	float: left;
+	text-align: center;
+}
+
+#UserPanel {
+	display:none;
+	position: absolute;
+	right: 50px;
+	top: 120px;
+	width: 300px;
+	height: 200px;
+	background-color: #fff7ff;
+	border: 1px solid gray;
+}
